@@ -308,6 +308,12 @@ input {
   cursor: pointer;
 }
 
+@media screen and (min-width:1024px) {
+  #projects-content {
+    height: 340vh;
+  }
+}
+
 @media screen and (max-width:450px) {
   .bar-container {
     padding: 40px;

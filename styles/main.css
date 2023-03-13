@@ -70,6 +70,7 @@ hr.line {
   justify-content: center;
   width: 100%;
   height: 100vh;
+  font-size: 3.5mm;
   /* background-color: #1AA5EB; */
 }
 .words {
@@ -124,6 +125,7 @@ svg {
   justify-content: first baseline;
 }
 .title {
+  /* margin-top: 100px; */
   font-size: 10mm;
   font-weight: bold;
   margin-bottom: 30px;
@@ -146,6 +148,9 @@ svg {
   /* font-weight: 600; */
   color: black;
   margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 #about-sub-title {
   font-size: 7mm;
@@ -173,7 +178,7 @@ svg {
   padding-left: 15px;
 }
 #projects-content {
-  height: 310vh;
+  height: 230vh;
 }
 #project-title {
   padding-left: 5px;
@@ -183,27 +188,19 @@ svg {
   flex-direction: column;
   justify-content: center;
   width: calc(100vw - 140px);
-  height: 295vh;
+  height: 210vh;
   padding-left: 70px;
   padding-right: 70px;
   gap: 20px;
 }
 .projects {
   width: calc((100vw - 160px));
-  height: 85vh;
-  background-color: #1AA5EB;
-  color: #E9EDF0;
-  padding: 10px;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
-  overflow: scroll;
-}
-#proTask {
-  background-color: #f6fbff;
-  height: 140vh;
-  color: black;
+
+  margin-bottom: 30px;
 }
 #proTask-img {
   padding-left: 5px;
@@ -263,7 +260,7 @@ svg {
 }
 a:link {
   text-decoration: none;
-  font-size: 5mm;
+  font-size: 3.5mm;
 }
 .sender-info {
   width: calc(100vw - 140px);
@@ -276,7 +273,7 @@ input {
   border: 0.5px solid #c2c5c7;
   border-radius: 5px;
   margin-bottom: 5px;
-  font-size: 4mm;
+  font-size: 3.5mm;
   padding-left: 10px;
 }
 #subject {
@@ -329,7 +326,7 @@ input {
     height: 8mm;
   }
   #about-content {
-    height: 120vh;
+    height: 130vh;
   }
   .title {
     font-size: 8mm;
@@ -357,9 +354,12 @@ input {
     padding-right: 40px;
     font-size: 3.5mm;
   }
+  #projects-content {
+    height: 250vh;
+  }
   #projects-container {
     width: calc(100vw - 80px);
-    height: 310vh;
+    height: 250vh;
     padding-left: 40px;
     padding-right: 40px;
     gap: 20px;

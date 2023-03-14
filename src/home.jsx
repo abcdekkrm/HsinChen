@@ -61,16 +61,16 @@ document.addEventListener('scroll', () => {
     let pjtContent = document.getElementById('projects-content').getBoundingClientRect();
     let conContent = document.getElementById('contact-content').getBoundingClientRect();
     
-    if((homeContent.top >= 0 && homeContent.top + 200 <= window.innerHeight) || (homeContent.bottom >= 0 && homeContent.bottom <= window.innerHeight)){
+    if((homeContent.top >= 0 && homeContent.top <= window.innerHeight / 2) || (homeContent.bottom >= 0 && homeContent.bottom <= window.innerHeight)){
         homeButton();
     }
-    if((abtContent.top >= 0 && abtContent.top + 200 <= window.innerHeight) || (abtContent.bottom >= 0 && abtContent.bottom <= window.innerHeight)){
+    if((abtContent.top >= 0 && abtContent.top <= window.innerHeight / 2) || (abtContent.bottom >= 0 && abtContent.bottom <= window.innerHeight)){
         aboutButton();
     }
-    if((pjtContent.top >= 0 && pjtContent.top + 200 <= window.innerHeight) || (pjtContent.bottom >= 0 && pjtContent.bottom <= window.innerHeight)){
+    if((pjtContent.top >= 0 && pjtContent.top <= window.innerHeight / 2) || (pjtContent.bottom >= 0 && pjtContent.bottom <= window.innerHeight)){
         projectsButton();
     }
-    if((conContent.top >= 0 && conContent.top + 200 <= window.innerHeight) || (conContent.bottom >= 0 && conContent.bottom <= window.innerHeight)){
+    if((conContent.top >= 0 && conContent.top <= window.innerHeight / 2) || (conContent.bottom >= 0 && conContent.bottom <= window.innerHeight)){
         contactButton();
     }
 })

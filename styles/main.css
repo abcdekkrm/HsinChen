@@ -22,18 +22,10 @@ html {
 .button-line {
   margin: 0;
   border: 0.5px solid #1AA5EB;;
+  display: none;
 }
 #home-line {
   display: block;
-}
-#about-line {
-  display: none;
-}
-#projects-line {
-  display: none;
-}
-#contact-line {
-  display: none;
 }
 .header {
   margin-top: 0;
@@ -50,6 +42,7 @@ hr.line {
   align-items: baseline;
   padding: 70px;
   padding-bottom: 10px;
+  padding-left: 65px;
 }
 .content-container {
   display: flex;
@@ -69,8 +62,10 @@ hr.line {
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   font-size: 3.5mm;
+  padding-top: 120px;
+  padding-bottom: 120px;
   /* background-color: #1AA5EB; */
 }
 .words {
@@ -177,9 +172,10 @@ svg {
 .school-sub-content {
   padding-left: 15px;
 }
-#projects-content {
+/* #projects-content {
   height: 230vh;
-}
+  min-height: 2000px;
+} */
 #project-title {
   padding-left: 0;
 }
@@ -188,7 +184,7 @@ svg {
   flex-direction: column;
   justify-content: center;
   width: calc(100vw - 140px);
-  height: 210vh;
+  /* height: 210vh; */
   padding-left: 70px;
   padding-right: 70px;
   gap: 20px;
@@ -308,15 +304,18 @@ input {
   cursor: pointer;
 }
 
-@media screen and (min-width:1024px) {
+/* @media screen and (min-width:1024px) {
   #projects-content {
-    height: 340vh;
+    height: 300vh;
   }
-}
+} */
 
 @media screen and (max-width:450px) {
   .bar-container {
     padding: 40px;
+    padding-left: 0px;
+    width: 100vw;
+    justify-content: center;
   }
   .button {
     font-size: 3.5mm;
@@ -338,9 +337,9 @@ input {
     width: 8mm;
     height: 8mm;
   }
-  #about-content {
+  /* #about-content {
     height: 165vh;
-  }
+  } */
   .title {
     font-size: 8mm;
     padding-left: 40px;
@@ -367,12 +366,12 @@ input {
     padding-right: 40px;
     font-size: 3.5mm;
   }
-  #projects-content {
+  /* #projects-content {
     height: 250vh;
-  }
+  } */
   #projects-container {
     width: calc(100vw - 80px);
-    height: 250vh;
+    /* height: 250vh; */
     padding-left: 40px;
     padding-right: 40px;
     gap: 20px;
